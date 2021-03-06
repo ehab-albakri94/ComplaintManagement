@@ -1,0 +1,9 @@
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintsManagement.Domain\bin\Debug\netstandard2.0\ComplaintsManagement.Domain.deps.json
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintsManagement.Domain\bin\Debug\netstandard2.0\ComplaintsManagement.Domain.dll
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintsManagement.Domain\bin\Debug\netstandard2.0\ComplaintsManagement.Domain.pdb
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintsManagement.Domain\obj\Debug\netstandard2.0\ComplaintsManagement.Domain.csprojAssemblyReference.cache
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintsManagement.Domain\obj\Debug\netstandard2.0\ComplaintsManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintsManagement.Domain\obj\Debug\netstandard2.0\ComplaintsManagement.Domain.AssemblyInfo.cs
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintsManagement.Domain\obj\Debug\netstandard2.0\ComplaintsManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintsManagement.Domain\obj\Debug\netstandard2.0\ComplaintsManagement.Domain.dll
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintsManagement.Domain\obj\Debug\netstandard2.0\ComplaintsManagement.Domain.pdb

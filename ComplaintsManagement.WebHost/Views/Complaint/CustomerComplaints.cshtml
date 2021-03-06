@@ -1,0 +1,53 @@
+﻿
+
+
+<h1>Customer Complaints</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-striped table-reponsive">
+                <thead>
+                    <tr>
+                        <th>complaint Id</th> 
+                        <th>complaint Type </th>
+                        <th>complaint Details </th>
+                        <th>complaint Time </th>
+                        <th>Urgent </th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="ComplaintsTB">
+                </tbody>
+            </table>
+            <a href="~/Complaint/AddCustomerComplaints" >Add new Complaint</a>
+        </div>
+    </div>
+</div>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+   
+    $(document).ready(function () {
+        getComplaints();
+    });
+
+    function getComplaints() {
+        $.ajax({
+            method: "GET",
+            url: "https://localhost:44374/api/ComplaintApi/GetCustomerComplaints",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            response: { get_param: 'value' },
+            success: function (response) {
+                 
+                $.each(response, function (i, item) {
+
+                    var row = $('<tr><td>' + item.complaintId + '</td><td>' + item.complaintType + '</td><td>' + item.complaintDetails + '</td><td>' + item.complaintTime + '</td><td>' + item.isUrgent + '</td><td>' + item.status + '</td></tr>');
+
+                    $("#ComplaintsTB").append(row);
+
+                });
+            }
+        })
+    }
+</script>
+

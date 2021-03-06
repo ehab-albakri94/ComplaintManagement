@@ -1,0 +1,9 @@
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintManagementRestClient\bin\Debug\netstandard2.1\ComplaintManagementRestClient.deps.json
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintManagementRestClient\bin\Debug\netstandard2.1\ComplaintManagementRestClient.dll
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintManagementRestClient\bin\Debug\netstandard2.1\ComplaintManagementRestClient.pdb
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintManagementRestClient\obj\Debug\netstandard2.1\ComplaintManagementRestClient.csprojAssemblyReference.cache
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintManagementRestClient\obj\Debug\netstandard2.1\ComplaintManagementRestClient.AssemblyInfoInputs.cache
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintManagementRestClient\obj\Debug\netstandard2.1\ComplaintManagementRestClient.AssemblyInfo.cs
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintManagementRestClient\obj\Debug\netstandard2.1\ComplaintManagementRestClient.csproj.CoreCompileInputs.cache
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintManagementRestClient\obj\Debug\netstandard2.1\ComplaintManagementRestClient.dll
+C:\Users\ehaba\source\repos\ComplaintManagement\ComplaintManagementRestClient\obj\Debug\netstandard2.1\ComplaintManagementRestClient.pdb

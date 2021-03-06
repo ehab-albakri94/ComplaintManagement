@@ -1,0 +1,98 @@
+﻿
+
+
+<h1>Please fill the complaint form</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="ComplaintType"> Complaint Type</label>
+                <select class="form-control" id="ComplaintType">
+                    <option value="" disabled selected>Please select type</option>
+                    <option value="Long Wait on Hold">Long Wait on Hold</option>
+                    <option value="Unavailable or Out of Stock Product">Unavailable or Out of Stock Product</option>
+                    <option value="Repeating the Customer's Problem">  Repeating the Customer's Problem </option>
+                    <option value="Uninterested Service Rep">Uninterested Service Rep</option>
+                    <option value="Poor Product or Service">Poor Product or Service</option>
+                    <option value="No First Call Resolution">No First Call Resolution</option>
+                    <option value="Lack of Follow Up">Lack of Follow Up</option>
+                </select>
+                <span class="text-danger" id="TypeValidation"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="ComplaintDetails">Complaint Details</label>
+                <textarea class="form-control" id="ComplaintDetails" aria-label="With textarea"></textarea>
+                <span class="text-danger" id="DetailsValidation"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="IsUrgent" value="off">
+                    <label class="form-check-label" for="IsUrgent">Is Urgent</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <button class="btn btn-primary btn-block" onclick="addComplaint();">Submit</button>
+            <a href="~/Complaint/CustomerComplaints" type="button" class="btn btn-dark btn-block">Back</a>
+        </div>
+    </div>
+
+</div>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+    var isUrgent = false;
+    $('#IsUrgent').change(function () {
+        if ($(this).prop('checked') === true) {
+            isUrgent = true;
+        }
+ 
+    });
+    function addComplaint() {
+         
+        var complaintType = $("#ComplaintType").val();
+        var complaintDetails = $("#ComplaintDetails").val();
+       
+         
+        if (complaintType == "") {
+             
+            $("#TypeValidation").text("Please select type");
+        }
+        else if (complaintDetails == "") {
+             
+            $("#TypeValidation").text("Please enter complaint details")
+        }
+        else {
+            
+             
+            var addComplaintDto = {};
+            addComplaintDto.ComplaintType = complaintType;
+            addComplaintDto.ComplaintDetails = complaintDetails;
+            addComplaintDto.IsUrgent = isUrgent;
+             
+            $.ajax({
+                url: 'https://localhost:44374/api/ComplaintApi/AddComplaint',
+                method: "POST",
+                dataType: 'json',
+                contentType: 'application/json; charset=utf-8',
+                data: JSON.stringify(addComplaintDto),
+                success: function (response) {
+                   
+                }
+            });
+        }
+        window.location.href = "https://localhost:44374/Complaint/CustomerComplaints";
+
+
+
+    }
+</script>

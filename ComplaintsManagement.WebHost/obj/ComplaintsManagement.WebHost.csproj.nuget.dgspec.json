@@ -1,0 +1,328 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.WebHost\\ComplaintsManagement.WebHost.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Application\\ComplaintsManagement.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Application\\ComplaintsManagement.Application.csproj",
+        "projectName": "ComplaintsManagement.Application",
+        "projectPath": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Application\\ComplaintsManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\ehaba\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ehaba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.DataAccess\\ComplaintsManagement.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.DataAccess\\ComplaintsManagement.DataAccess.csproj"
+              },
+              "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Domain\\ComplaintsManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Domain\\ComplaintsManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.DataAccess\\ComplaintsManagement.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.DataAccess\\ComplaintsManagement.DataAccess.csproj",
+        "projectName": "ComplaintsManagement.DataAccess",
+        "projectPath": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.DataAccess\\ComplaintsManagement.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\ehaba\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ehaba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Domain\\ComplaintsManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Domain\\ComplaintsManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Domain\\ComplaintsManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Domain\\ComplaintsManagement.Domain.csproj",
+        "projectName": "ComplaintsManagement.Domain",
+        "projectPath": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Domain\\ComplaintsManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\ehaba\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ehaba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.WebHost\\ComplaintsManagement.WebHost.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.WebHost\\ComplaintsManagement.WebHost.csproj",
+        "projectName": "ComplaintsManagement.WebHost",
+        "projectPath": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.WebHost\\ComplaintsManagement.WebHost.csproj",
+        "packagesPath": "C:\\Users\\ehaba\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.WebHost\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ehaba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Application\\ComplaintsManagement.Application.csproj": {
+                "projectPath": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Application\\ComplaintsManagement.Application.csproj"
+              },
+              "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.DataAccess\\ComplaintsManagement.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.DataAccess\\ComplaintsManagement.DataAccess.csproj"
+              },
+              "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Domain\\ComplaintsManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Domain\\ComplaintsManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
