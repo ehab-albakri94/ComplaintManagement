@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Domain\\ComplaintsManagement.Domain.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Domain\\ComplaintsManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Domain\\ComplaintsManagement.Domain.csproj",
+        "projectName": "ComplaintsManagement.Domain",
+        "projectPath": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Domain\\ComplaintsManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\ehaba\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ehaba\\source\\repos\\ComplaintManagement\\ComplaintsManagement.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ehaba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

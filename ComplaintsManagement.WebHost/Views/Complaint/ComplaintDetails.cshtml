@@ -1,0 +1,151 @@
+﻿@model ComplaintsManagement.WebHost.Models.ComplaintDetails
+<h1>Complaint Details</h1>
+
+ 
+<div class="container">
+    <input asp-for="Id" hidden id="ComplaintId" class="form-control" />
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="FullName"> Customer Name</label>
+                <input type="text" readonly class="form-control" id="FullName" />
+
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="Email"> Customer Email</label>
+                <input type="text" class="form-control" readonly id="Email" />
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="ComplaintType">Complaint Type</label>
+                <input type="text" class="form-control" readonly id="ComplaintType" />
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="ComplaintTime"> Complaint Time</label>
+                <input type="text" readonly class="form-control" id="ComplaintTime" />
+
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="Status"> Complaint Status</label>
+                <select class="form-control" name="Status" id="Status">
+                    <option value="" disabled selected>Please Status </option>
+                    <option value="pending">Pending</option>
+                    <option value="resolved">Resolved</option>
+                    <option value="dismissed">  Dismissed </option>
+
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="ComplaintDetails">Complaint Details</label>
+                <textarea class="form-control" id="ComplaintDetails" aria-label="With textarea" readonly></textarea>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+
+                <label>Is Urgent</label>
+                <input class="form-control" type="text" readonly id="IsUrgent">
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <button class="btn btn-primary btn-block" onclick="ChangeStausComplaint();">Save</button>
+            <a href="~/Complaint/Complaints" type="button" class="btn btn-dark btn-block">Back</a>
+        </div>
+    </div>
+
+</div>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+       
+        getComplaintDetail();
+    });
+    function getComplaintDetail() {
+        var id = $("#ComplaintId").val();
+
+        $.ajax({
+            method: "GET",
+            url: "https://localhost:44374/api/ComplaintApi/GetComplaintById?id=" + id,
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            response: { get_param: 'value' },
+            success: function (response) {
+
+
+                $("#FullName").val(response.customerName);
+                $("#Email").val(response.cutomerEmail);
+                $("#ComplaintType").val(response.complaintType);
+                $("#ComplaintTime").val(response.complaintTime);
+                $("#ComplaintDetails").text(response.complaintDetails);
+                $("#IsUrgent").val(response.isUrgent);
+
+                $('select[name="Status"]').find('option[value="' + response.status + '"]').attr("selected", true)
+
+            }
+        })
+    }
+
+    function ChangeStausComplaint() {
+        var id = $("#ComplaintId").val();
+        var statusSelectes = $("#Status").val();
+        var status = 0;  
+        if (statusSelectes == "pending") {
+            status = 2;
+        }if (statusSelectes == "resolved") {
+            status = 1;
+        } if (statusSelectes == "dismissed") {
+            status = 3;
+        }
+        if (status != 0) {
+            $.ajax({
+                method: "PUT",
+                url: "https://localhost:44374/api/ComplaintApi/ChangeStatusComplaint?id=" + id + "&status=" + status,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                response: { get_param: 'value' },
+                success: function (response) {
+
+
+                   
+
+                }
+            })
+            window.location.href = "https://localhost:44374/Complaint/Complaints";
+        }
+    }
+</script>
+ 
+
